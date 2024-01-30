@@ -37,7 +37,7 @@ let removeBG = (arg) => {
         setInterval(function(){
             player.classList.remove('winbg')
 
-        }, 10000)
+        }, 10000 * 3)
     }
 }
 
@@ -113,7 +113,7 @@ function HOLD() {
 
     
     // Declare winner and increment rounds
-    if(Number(totalScore.textContent) >= 10){
+    if(Number(totalScore.textContent) >= 30){
         rounds++
         accumulateRounds[activePlayer] += rounds
         playerScores.textContent = accumulateRounds[activePlayer]
