@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* place-items: center; */
+    background-color: rgb(51, 46, 46);
+}
+.player0, .player1{
+    width: 35vw;
+    height: 52vh;
+    background-color: rgb(90, 70, 70);
+    /* float: center; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 50px 2px;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+}
+.hide{
+    background-color: rgb(45, 62, 24);
+    color: white;
+}
+.header{
+    background-color: rgba(210, 204, 204, 0.613);
+    margin: 20vh auto -1em auto;
+    width: 350px;
+    border-radius: 50px;
+}
+h1{
+    text-align: center;
+}
+.new-game{
+    position: relative;
+    margin: 5px auto 0 auto
+}
+ .buttons{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    height: 52vh;
+    background-color: rgb(42, 25, 25);
+    justify-content: space-between;
+    
+} 
+.roll-dice{
+    margin-top: 12em;
+}
+.hold{
+    margin-bottom: 0.5em;
+}
+.new-game, .roll-dice, .hold, .start{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgba(210, 204, 204, 0.613);
+}
+.label, .scores, .current{
+    margin: -2em auto 0 auto;
+    margin-top: 0.15em;
+    font-size: xx-large;
+}
+.current{
+    width: 5em;
+    height: fit-content;
+    background-color: rgb(33, 2, 25) ;
+    padding: 5px;
+    font-size: large;
+    /* margin: ; */
+    color: #b69e9e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.text, .currValue{
+    margin: 0 auto 2px auto;
+}
+.scores{
+    margin-top: -1em;
+}
+.text{
+    font-size: small;
+}
+.screen{
+    width: 10em;
+    height: fit-content;
+    background-color: #3f2525;
+    padding: 1em;
+    text-align: center;
+    margin-top: -4em;
+    color: #b69e9e;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #000;
+    
+}
+
+/* DICE */
+.dice6{
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* dice 5 */
+.dice5{
+    display: none;
+}
+.mid{
+    margin: 0 auto;
+    /* display: none; */
+}
+.top, .low{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* dice 4 */
+.dice4 .low{
+    margin-top: 1em;
+}
+.dice4{
+    display: none;
+}
+/* dice 3 */
+.dice3{
+    /* display: flex; */
+    flex-direction: row;
+    margin: 1.2em 0.5em 0 0.5em;
+    justify-content: space-between;
+    display: none;
+}
+/* dice 2 */
+/* .dice2{
+
+} */
+.dice2 .top{
+    float: right;
+    margin-right: 2px;
+}
+.dice2 .low{
+    float: bottom;
+    margin: 3em 0 0 2px;
+    position: absolute;
+}
+.dice2{
+    display: none;
+}
+/* dice 1 */
+.dice1{
+    margin: 1.68em auto 0 1.68em;
+    display: none;
+
+}
+.dice{
+    width: 4em;
+    height: 4em;
+    background-color: #b1a8a8;
+    margin: 5em auto -5em auto;
+    visibility: hidden;
+    border-radius: 4px;
+}
+.dot{
+    width: 9px;
+    height: 9px;
+    background-color: #7d0101;
+    border-radius: 50%;
+    margin-top: 0.5em;
+}
+/* classes to add and remove */
+.playerbg{
+    background-color: rgb(0, 88, 10);
+}
+.losebg{
+    background-color: red;
+}
+.winbg{
+    background-color: rgb(37, 19, 107);
+}

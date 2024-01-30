@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylePigGame.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>PIG GAME</h1>
+    </div>
+        <div class="gameContainer">
+        <div class="player0">
+            <p class="label">PLAYER 1</p>
+            <div class="text screen0 screen">
+                <p class="text YOU" contenteditable="1">YOU: <span class="totalScore--0">0</span></p>
+            </div>
+            <p class="scores--0 scores">0</p>
+            <div class="current">
+                <span class="text">CURRENT</span>
+                <span class="currValue0 currValue">0</span>
+            </div>
+        </div>
+        <div class="buttons">
+        <button class="new-game">NEW GAME</button>
+        <button class="start">START</button>
+        <!-- DICE -->
+        <div class="dice">
+            <div class="dice6 six">
+                <div class="left">
+                
+                    <div class="l dot"></div>
+                    <div class="l dot"></div>
+                    <div class="l dot"></div>
+                </div>
+                <div class="right">
+                    <div class="r dot"></div>
+                    <div class="r dot"></div>
+                    <div class="r dot"></div>
+                </div>     
+            </div>
+            <div class="dice5">
+                <div class="top">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="mid dot"></div>
+                <div class="low">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="dice4">
+                <div class="top">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <!-- <div class="mid dot"></div> -->
+                <div class="low">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="dice3">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="dice2">
+                <div class="dot top"></div>
+                <div class="dot low"></div>
+            </div>
+            <div class="dice1">
+                <div class="dot top"></div>
+            </div>
+        </div>
+        <button class="roll-dice">ROLL DICE</button>
+        <button class="hold">HOLD</button>
+        </div>
+        
+        <div class="player1">
+            <p class="label">PLAYER 2</p>
+            <div class="text screen1 screen">
+                <p class="text GUEST" contenteditable="1">GUEST: <span class="totalScore--1">0</span></p>
+            </div>
+            <p class="scores--1 scores">0</p>
+            <div class="current">
+                <span class="text">CURRENT</span>
+                <span class="currValue1 currValue">0</span>
+            </div>
+        </div>
+    </div>
+    
+<script src="piggame.js"></script>
+</body>
+</html>
