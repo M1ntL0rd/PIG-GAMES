@@ -7,6 +7,7 @@ let hold = document.querySelector('.hold');
 let you = document.querySelector('.YOU');
 let guest = document.querySelector('.GUEST');
 let start = document.querySelector('.start');
+let suspended = document.querySelector('.suspended')
 
 let clicks = 0;
 let newGameClicks = 0;
@@ -14,11 +15,19 @@ let savePrevRandomNumber = [];
 let activePlayer = 0;
 let deactive = 1;
 let PLAYING = true;
+let intervalId1, intervalId2; 
 
 // function to switch player
 function switchPlayer(arg) {
     if (arg === 1 || arg === 0) {
         activePlayer = activePlayer === 0 ? 1 : 0;
+        if(arg === 1){
+            suspended.style.display = 'block';
+            clearInterval(intervalId1)   
+            intervalId1 = setInterval(function(){
+                suspended.style.display = 'none';   
+            }, 1000)
+        }
         addBG()
     }
     
@@ -34,10 +43,11 @@ let removeBG = (arg) => {
         screen = document.querySelector(`.screen${deactive}`);
         screen.classList.remove('playerbg');
         player.classList.remove('hide');
-        setInterval(function(){
+        clearInterval(intervalId2);   
+        intervalId2 = setInterval(function(){
             player.classList.remove('winbg')
 
-        }, 10000 * 3)
+        }, 3000)
     }
 }
 
